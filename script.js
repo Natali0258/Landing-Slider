@@ -30,6 +30,10 @@ firstItem.style.background = 'rgba(255, 255, 255, 0.3)'
 secondItem.style.background = 'rgba(255, 255, 255, 0.3)'
 threeItem.style.background = 'rgba(255, 255, 255, 0.3)'
 
+firstText.style.color = 'rgba(255, 255, 255, 0.3'
+secondText.style.color = 'rgba(255, 255, 255, 0.3'
+threeText.style.color = 'rgba(255, 255, 255, 0.3'
+
 let currentIndex = 0;
 
 const setEntity = (index) => {
@@ -125,19 +129,13 @@ prevMobil.addEventListener('click', () => {
 	if (currentIndex == 0) {
 		currentIndex = 3;
 	}
-	console.log('prev', currentIndex);
 	setEntityMobil(currentIndex - 1);
 	currentIndex -= 1;
-	console.log('prev+', currentIndex);
-	//setColor(currentIndex);
 })
 nextMobil.addEventListener('click', () => {
 	if (currentIndex == 2) {
 		currentIndex = -1;
 	}
-	console.log('next', currentIndex);
 	setEntityMobil(currentIndex + 1);
 	currentIndex += 1;
-	console.log('next+', currentIndex);
-	//setColor(currentIndex);
 })
